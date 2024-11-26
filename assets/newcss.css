@@ -140,7 +140,6 @@ img {
 .section__title {
   font-size: var(--h1-font-size);
 }
-
 .section__subtitle {
   display: block;
   font-size: var(--small-font-size);
@@ -1162,4 +1161,37 @@ img {
   .button--white {
     bottom: -4.5rem;
   }
+}
+/* Center child elements */
+body,
+.website-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+/* Styles for website counter container */
+.website-counter {
+  background-color:var(--first-color);
+  height: 30px;
+  width: 50px;
+  color: white;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 15px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Styles for reset button */
+#reset {
+  margin-top: 20px;
+  background-color: var(--first-color);
+  cursor: pointer;
+  font-size: 15px;
+  padding: 8px 20px;
+  color: white;
+  border-radius: 30px;
 }
