@@ -1162,7 +1162,7 @@ img {
     bottom: -4.5rem;
   }
 }
-/* Center child elements */
+/* Center child elements 
 
 .website-counter {
   display: flex;
@@ -1172,7 +1172,7 @@ img {
 }
 
 
-/* Styles for website counter container */
+/* Styles for website counter container 
 .website-counter {
   background-color:var(--first-color);
   height: 30px;
@@ -1185,7 +1185,7 @@ img {
   text-align: center;
 }
 
-/* Styles for reset button */
+/* Styles for reset button 
 #reset {
   margin-top: 20px;
   background-color: var(--first-color);
@@ -1194,4 +1194,4 @@ img {
   padding: 8px 20px;
   color: white;
   border-radius: 30px;
-}
+}*/
