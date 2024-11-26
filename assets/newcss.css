@@ -1163,7 +1163,7 @@ img {
   }
 }
 /* Center child elements */
-body,
+
 .website-counter {
   display: flex;
   justify-content: center;
