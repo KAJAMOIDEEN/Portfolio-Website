@@ -739,18 +739,18 @@
           <form action="" class="contact__form grid">
             <div class="contact__inputs grid">
               <div class="contact__content">
-                <label for="" class="content__label">Name</label>
+                <label for="" class="content__label" id="name" value="${input.name}">Name</label>
                 <input type="text" class="contact__input" />
               </div>
 
               <div class="contact__content">
-                <label for="" class="content__label">Email</label>
+                <label for="" class="content__label" id="email" value="${input.email}">Email</label>
                 <input type="Email" class="contact__input" />
               </div>
             </div>
 
             <div class="contact__content">
-              <label for="" class="content__label">Message</label>
+              <label for="" class="content__label" id="msg" value="${input.msg}">Message</label>
               <textarea
                 name=""
                 id=""
@@ -762,7 +762,7 @@
 
             <div>
               <a
-                href=" mailto: kajamoideenkj@gmail.com?subject=Testing out mailto! &body=This is only a test!"
+                href=" mailto: kajamoideenkj@gmail.com?subject=Regarding -Subject- &body=Name:name, Email:emial, Message:msg"
                 class="button button--flex"
               >
                 Send Message
