@@ -800,8 +800,8 @@
           </ul>
 
           <div class="footer__socials">
-            <a href="https://www.instagram.com/crazzy_boy_kj/"><i class="fa fa-instagram" style="font-size:48px;color:white"></i></a>
-             <a href="https://wa.me/09940539121"><i class="fa fa-whatsapp" style="font-size:48px;color:white"></i></a>
+            <a href="https://www.instagram.com/crazzy_boy_kj/" target="_blank"><i class="fa fa-instagram" style="font-size:48px;color:white"></i></a>
+             <a href="https://wa.me/919940539121" target="_blank"><i class="fa fa-whatsapp" style="font-size:48px;color:white"></i></a>
           </div>
         </div>
    
@@ -817,5 +817,30 @@
     <script type="text/javascript" src="assets/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/2205d59d52.js" crossorigin="anonymous"></script>
     <script src="assets/ptj.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+   document.getElementById('contact-form').addEventListener('submit', async function (event) {
+     event.preventDefault();
+
+     const name = document.getElementById('name').value;
+     const email = document.getElementById('email').value;
+     const message = document.getElementById('message').value;
+
+     const response = await fetch('api/send-email.js', {
+       method: 'POST',
+       headers: {
+         'Content-Type': 'application/json',
+       },
+       body: JSON.stringify({ name, email, message }),
+     });
+
+     if (response.ok) {
+       alert('Message sent successfully!');
+     } else {
+       alert('Error sending message. Please try again.');
+     }
+   });
+ });
+   </script>
   </body>
 </html>
