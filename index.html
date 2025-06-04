@@ -11,10 +11,16 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@100&display=swap" rel="stylesheet">
   </head>
 
   <body oncontextmenu="return false">
+    <!-- For the Image Reloading -->
+    <div id="preloader"></div>
     <header class="header" id="header">
       <nav class="nav container">
         <!-- <b >Profile Visits<b class="website-counter"></b> </b> -->
@@ -768,7 +774,8 @@
         </div>
       </section>
     </main>
-
+    <!-- WhatsApp Chat Button with Animation -->
+<!-- HTML for WhatsApp Button -->
     <!--================== Footer ===============-->
     <footer class="footer">
       <div class="footer__bg">
@@ -802,11 +809,17 @@
       </div>
     </footer>
 
-    <!--================== SCROLL TOP ==================-->
-    <a href="#" class="scrollup" id="scroll-up">
-      <i class="uil uil-arrow-up scrollup__icon"></i>
-    </a>
+    <!-- Scroll Up Button -->
+<a href="#" class="scrollup" id="scroll-up">
+  <i class="uil uil-arrow-up scrollup__icon"></i>
+</a>
 
+<!-- WhatsApp Button -->
+<a href="https://wa.me/12345678900" target="_blank" class="whatsapp-chat" aria-label="Chat with us">
+  <div class="whatsapp-circle">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon" />
+  </div>
+</a>
     <script type="text/javascript" src="assets/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/2205d59d52.js" crossorigin="anonymous"></script>
     <script src="assets/ptj.js"></script>
@@ -834,6 +847,18 @@
      }
    });
  });
+     
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load" , function(){
+            loader.style.display = "none";
+        })
+        
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 1000,
+            speedAsDuration: true
+        });
+
+
    </script>
   </body>
 </html>

@@ -1162,6 +1162,62 @@ img {
     bottom: -4.5rem;
   }
 }
+
+.scrollup {
+    position: fixed;
+    bottom: 95px; /* Adjust as needed */
+    right: 20px;  /* Adjust as needed */
+    z-index: 10000;
+    background: transparent;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  /* WhatsApp Button */
+  .whatsapp-chat {
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px;  /* Adjust as needed */
+    z-index: 9999;
+    cursor: pointer;
+  }
+
+
+  /* The circular button styling */
+  .whatsapp-circle {
+    width: 70px;
+    height: 70px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  /* Hover effect for interactivity */
+  .whatsapp-circle:hover {
+    transform: scale(1.7);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  }
+
+  /* The WhatsApp icon with bounce animation */
+  .whatsapp-icon {
+    width: 30px;
+    height: 30px;
+    animation: bounce 1.5s infinite;
+  }
+
+  /* Bounce animation for the icon */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
 /* Center child elements 
 
 .website-counter {
