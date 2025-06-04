@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-This repository contains the source code and files for my personal portfolio website. The website is built using HTML, CSS, and JavaScript.
+This repository contains the source code and files for my personal portfolio website. The website is built using HTML, CSS,Bootstrap, JavaScript, and NodeJS.
 
 ## Description
 
@@ -16,9 +16,11 @@ The personal portfolio website showcases my skills, projects, and experiences as
 
 ## Technologies Used
 
-- HTML: Markup language used for structuring the website.
-- CSS: Stylesheet language used for designing and formatting the website.
-- JavaScript: Programming language used for adding interactivity and dynamic features.
+- HTML: Markup language used for structuring the website.  
+- CSS: Stylesheet language used for designing and formatting the website.  
+- Bootstrap: Front-end framework that provides ready-to-use CSS classes and components for building responsive and mobile-first websites.  
+- JavaScript: Programming language used for adding interactivity and dynamic features to the website.  
+- Node.js: Runtime environment used for server-side programming; commonly utilized for backend tasks such as sending emails with modules like Nodemailer.
 
 ## Getting Started
 
