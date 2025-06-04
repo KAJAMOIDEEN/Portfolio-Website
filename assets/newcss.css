@@ -1163,24 +1163,27 @@ img {
   }
 }
 
+/* Scroll Up Button */
 .scrollup {
-    position: fixed;
-    bottom: 95px; /* Adjust as needed */
-    right: 20px;  /* Adjust as needed */
-    z-index: 10000;
-    background: transparent;
-    font-size: 24px;
-    cursor: pointer;
-  }
+  position: fixed;
+  bottom: 160px; /* Increased from 80px to 100px */
+  right: 20px;   /* Keep the same or adjust as needed */
+  z-index: 10000;
+  cursor: pointer;
+  /* Optional styling for better appearance */
+  background: transparent;
+  font-size: 24px;
+}
 
-  /* WhatsApp Button */
-  .whatsapp-chat {
-    position: fixed;
-    bottom: 20px; /* Adjust as needed */
-    right: 20px;  /* Adjust as needed */
-    z-index: 9999;
-    cursor: pointer;
-  }
+/* WhatsApp Button */
+.whatsapp-chat {
+  position: fixed;
+  bottom: 70px; /* Increased from 20px to 60px */
+  right: 20px;  /* Keep the same or adjust as needed */
+  z-index: 9999;
+  cursor: pointer;
+}
+
 
 
   /* The circular button styling */
@@ -1198,7 +1201,7 @@ img {
 
   /* Hover effect for interactivity */
   .whatsapp-circle:hover {
-    transform: scale(1.7);
+    transform: scale(1.5);
     box-shadow: 0 8px 20px rgba(0,0,0,0.4);
   }
 
